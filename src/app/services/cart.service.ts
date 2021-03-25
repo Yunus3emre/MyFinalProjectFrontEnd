@@ -15,7 +15,8 @@ export class CartService {
     let item = CartItems.find(c => c.product.productId === product.productId);
     if (item) {
       item.quantity += 1;
-    } else {
+    } 
+    else {
       let cartItem = new CartItem()
       cartItem.product = product;
       cartItem.quantity = 1;
